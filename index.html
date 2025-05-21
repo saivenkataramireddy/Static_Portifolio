@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="icon" href="2.jpg">
+
+</head>
+<body>
+    <!--External javascript file-->
+    <script src="index.js"></script>
+    <!--header section nav bar creation-->
+    <section class="header">
+        <a id="port" href="#">Portifolio</a>
+    <nav class="navbar">
+        <!--for desktop display-->
+    <ul id="hide">
+        
+        <li><a href="#body2">Home</a> </li>
+        <li><a href="#about">about me</a> </li>
+        <li><a href="#Certifications">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a> </li>
+    </ul>
+    <!--for mobile display-->
+    <ul id="slidebar">
+        <li class="hideonmobile" ><a href="#" onclick="hidebar()"><img src="close.png" width="28x" height="28"></a></li>
+        <li class="hideonmobile"><a href="#body2">Home</a> </li>
+        <li class="hideonmobile"><a href="#about">about me</a> </li>
+        <li class="hideonmobile"><a href="#Certifications">Certifications</a></li>
+        <li class="hideonmobile"><a href="#projects">Projects</a></li>
+        <li class="hideonmobile"><a href="#contact">Contact</a> </li>
+    </ul>
+    <div class="menu-button" onclick="showslidebar()">
+        <li><a href="#"><img src="menu.png" width="38x" height="28"></a></li>
+
+    </div>
+    </nav>
+    </section><br>
+    <!--navbar section completed-->
+<!--body building-->
+<section class="body2" id="body2">
+<div class="home">
+    <h3>Hello , It's Me</h3>
+    <h1>Sai Venkata Rami Reddy Kesara</h1>
+    <h3>And I'm a <span>Frontend Developer</span></h3>
+    <p>With a passion for creating intuitive and dynamic user experiences, I specialize in building responsive and interactive websites. I have a strong background in HTML, CSS, JavaScript</p>
+    <p>I am dedicated to continuous learning and staying up-to-date with the latest industry trends. My goal is to deliver high-quality code and contribute to meaningful projects.</p>
+    <p>When I'm not coding, I enjoy exploring new technologies, working on personal projects, and connecting with like-minded professionals.</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com/"><img src="facebook.png"> </a>
+    </div>
+    <div class="social-media">
+        <a href="https://wa.me/+917207327846?text=Hello"><img src="whatsapp.png"></a>
+    </div>
+    <div class="social-media">
+        <a href="https://www.instagram.com/"><img src="instagram.png"></a>
+    </div>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/login"><img src="linkedin.png"></a>
+    </div>
+    <div class="cvbutton">
+    <a class="button" href="Sai Venkata Rami Reddy Kesar1.pdf">Download resume</a>
+    </div>
+</div>
+<div class="profile">
+    <img src="pro-removebg-preview.png">
+</div>
+</section><br>
+<!--About  me section-->
+<section class="about" id="about">
+    <div class="profile2">
+        <img src="2.jpg">
+    </div>
+    <div class="about-me">
+        <h2>About<span>Me</span></h2>
+            <h3>Hello, It's Me</h3>
+            <h1>Sai Venkata Rami Reddy Kesara</h1>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
+            <p>Hello! I'm Sai Venkata Rami Reddy Kesara, a passionate Frontend Developer with a strong background in creating interactive and responsive web applications. With a keen eye for design and a deep understanding of web technologies, I strive to deliver seamless user experiences.</p><br><br>
+            <a class="button" id="read-more-btn" href="javascript:void(0);" onclick="toggleReadMore()">Read more</a><br><br>
+            <div id="more-about" style="display: none;">
+                <p>My journey into web development started out of curiosity and has evolved into a full-fledged career. I enjoy transforming ideas into reality using code and love the challenges that come with it. I am proficient in HTML, CSS, JavaScript, and various frontend frameworks.</p>
+                <p>Outside of work, I am constantly exploring new technologies and working on personal projects to hone my skills. I believe in continuous learning and am always eager to take on new challenges.</p>
+                <p>In my free time, I like to connect with other professionals in the field, participate in coding bootcamps, and contribute to open-source projects. When I'm not coding, you can find me reading, hiking, or enjoying a good cup of coffee.</p>
+            </div>
+        </div>
+
+</section>
+<section class="Certifications" id="Certifications">
+    <div class="c1">
+        <h2>Certification courses done by <span>ME</span>on different platforms</h2>
+        <img src="infosys devops.png">
+        <img src="cotinous intigration.png">
+        <img src="html great learning certificate.jpg">
+    </div>
+    <div class="c2">
+        <img src="repository.png">
+        <a href="https://www.linkedin.com/learning/certificates/e00ebab8f724cbc975d3be37e016173c999b743ca31da48a1d92f739034920d2?trk=share_certificate"><img src="linkedinai.png"> </a>
+        <a href="https://olympus.mygreatlearning.com/courses/64941/certificate"><img src="dbms.jpg"> </a>
+        <a href="https://olympus.mygreatlearning.com/courses/10899/certificate"><img src="machine learning.jpg"> </a>
+    </div>
+</section>
+<h2 class="proje">Technical Projects Done by <span>Me!</span></h2>
+<section class="Projects" id="projects">
+
+    <div class="proj">
+       <a href="https://github.com/saivenkataramireddy/python-proj/commit/294c25d9e4243d68fad8bcc947ef617b605f7c1d?diff=unified&w=1" title="this is a python reader file " ><img src="python reader.png"></a><p>Python project on student management system</p>
+       <a href="https://mainportifoliowebsite.netlify.app/"><img src="portifolio.png" title="  This is my third project done by me using HTML language, CSS language and JAVA script language"> </a><p>Portifolio</p>
+    <!-- </div>
+        <div id="pr">
+            <a href="https://saivenkataramireddyproject2.netlify.app/" title="This is my second project done by me using HTML language, CSS language and JAVA script language"><img src="2nd prj.png"></a><p>Another portifolio using Html,css and js</p>
+            <a href="https://kollistiruvuru.netlify.app/"><img src="kollis.png" title="hotal in tiruvuru / rooms booking application"> </a><p>Hotel application with html and css</p>
+            
+        </div>
+        <div id="pr">
+            <a href="https://svrr-grands.netlify.app/"><img src="svrr.png"> </a>    <p>This site under cunstruction</p>    
+            <a href="https://github.com/saivenkataramireddy/python-proj/blob/main/banking.py"><img src="banking python proj.png"title="banking project using python"> </a><p>Banking project in python</p>  
+            
+        </div> -->
+    </div>
+</section>
+<!--Contact section -->
+<h2>Contact Me !!</h2>
+<section class="contact" id="contact">
+    <center>
+        <div class="social-media">
+            <a href="https://wa.me/+917207327846?text=Hello"><img src="whatsapp.png" width="20px" height="10px"></a>
+        </div>
+    </center>
+    
+<!--    <form action="#">
+    <div class="con">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">        
+    </div>    
+    <div class="con">
+        <input type="number" placeholder="Mobile number">
+        <input type="text" placeholder="Email Subject">
+    </div>
+    <div class="con">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+        <input type="submit" value="send message" class="button"> 
+    </div><br>-->
+    <footer class="fotter">
+        <center>        <div class="fotter-text">
+            <p> Copyright &copy ; 2024 by sai reddy| All Rights Reserved.</p>
+        </div>
+        <div class="iconfoot"><a href="#body2"><img src="up-arrow.png" width="60px" height="70px" > </a></div>
+    </center>
+
+    </footer>
+</form>
+</section>
+</body>
+</html>
